@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+import Contact from '../Contact/Contact';
 import JumboTron from '../JumboTron/JumboTron';
 import Nav from '../Nav/Nav';
 import Projects from '../Projects/Projects'
@@ -10,7 +11,7 @@ export default function Main(props) {
   const [showAbout, setShowAbout] = useState(false)
   const [showContact, setShowContact] = useState(false)
   const [showLanding, setShowLanding] = useState(true)
-  const [showProjects, setShowProjects] = useState(false)
+  const [showProjects, setShowProjects] = useState(true)
 
   return (
     <div className="Main">
@@ -21,8 +22,9 @@ export default function Main(props) {
         showLanding={setShowLanding}  
       />
       <JumboTron />
+      {/* <Contact /> */}
       {showProjects && <Projects />}
-      {!showLanding && <div className="Main__end"></div>}
+      {showLanding && <div className="Main__end"></div>}
     </div>
   )
 }
