@@ -1,0 +1,34 @@
+.Header {
+  background-color: #f1f1f1;
+  padding-top: 10vh;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5vh;
+
+
+  &__text {
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 8em;
+    line-height: 0.9em;
+    letter-spacing: 1px;
+    text-align: center;
+    transform: rotate(-28deg) skew(25deg);
+    transition: 0.5s
+  }
+
+  &__text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    color: rgba(0, 0, 0, 0.3);
+    text-shadow: none;
+    filter: blur(8px);
+    z-index: -1;
+  }
+  
+}

@@ -1,0 +1,120 @@
+.SocialMediaButtons {
+
+  &__list {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    transform: rotate(30deg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  &__item {
+    list-style: none;
+    margin: 0 55px;
+
+    &--icon {
+      font-size: 40px;
+      color: rgb(141, 134, 134);
+      line-height: 80px;
+      transition: 0.5s;
+    }
+
+    
+
+
+    #github:hover {
+      background-color: #6cc644;
+
+      .SocialMediaButtons__item--icon {
+        color: white
+      }
+    }
+
+    #github:hover::before {
+      background-color: #74da49;
+    }
+
+    #github:hover::after {
+      background-color: #72d348;
+    }
+    
+    #linkedin:hover {
+      background-color: #2867B2;
+
+      .SocialMediaButtons__item--icon {
+        color: white
+      }
+    }
+
+    #linkedin:hover::before {
+      background-color: rgb(46, 115, 199);
+    }
+
+    #linkedin:hover::after {
+      background-color: rgb(44, 108, 187);
+    }
+
+    #email:hover {
+      background-color: #c32e00;
+
+      .SocialMediaButtons__item--icon {
+        color: white
+      }
+    }
+    
+    #email:hover::before {
+      background-color: #bd2c00;
+    }
+
+    #email:hover::after {
+      background-color: #d33303;
+    }
+    
+    &--link {
+      position: relative;
+      display: block;
+      width: 80px;
+      height: 80px;
+      background-color: #fff;
+      text-align: center;
+      transform: perspective(1000px) 
+                 skew(-25deg)
+                 translate(0,0);
+       transition: 0.5s;
+       box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    &--link::before {
+      content: '';
+      position: absolute;
+      bottom: -9px;
+      right: -19px;
+      height: 100%;
+      width: 20px;
+      background-color: #d9d9d9;
+      transform: rotate(0deg) skewY(45deg);
+    }
+
+    &--link::after {
+      content: '';
+      position: absolute;
+      bottom: -35px;
+      right: 16px;
+      height: 71%;
+      width: 30px;
+      background-color: #d9d9d9;
+      transform: rotate(45deg) skewX(-45deg);
+    }
+
+    &--link:hover {
+      transform: perspective(1000px) 
+                //  rotate(30deg) 
+                 skew(-25deg)
+                 translate(-20px,-20px);
+      box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
