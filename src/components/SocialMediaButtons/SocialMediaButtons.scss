@@ -2,8 +2,8 @@
 
   &__list {
     position: absolute;
-    top: 20%;
-    left: 60%;
+    top: 20vh;
+    left: 40vw;
     transform: rotate(30deg);
     margin: 0;
     padding: 0;
@@ -93,7 +93,7 @@
       right: -19px;
       height: 100%;
       width: 20px;
-      background-color: #d9d9d9;
+      background-color: #c8c7c7;
       transform: rotate(0deg) skewY(45deg);
     }
 

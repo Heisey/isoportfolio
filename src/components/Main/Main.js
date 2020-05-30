@@ -1,21 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import Header from '../Header/Header';
 import JumboTron from '../JumboTron/JumboTron';
-import ProjectCard from '../ProjectCards/ProjectCards';
+import Nav from '../Nav/Nav';
+import Projects from '../Projects/Projects'
 
 import './Main.scss'
 
 export default function Main(props) {
+  const [showAbout, setShowAbout] = useState(false)
+  const [showContact, setShowContact] = useState(false)
+  const [showLanding, setShowLanding] = useState(true)
+  const [showProjects, setShowProjects] = useState(false)
 
   return (
     <div className="Main">
+      <Nav
+        showAbout={setShowAbout}
+        showContact={setShowContact}
+        showProjects={setShowProjects}
+        showLanding={setShowLanding}  
+      />
       <JumboTron />
-      <Header title="PROJECTS" />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <div className="Main__end"></div>
+      {showProjects && <Projects />}
+      {!showLanding && <div className="Main__end"></div>}
     </div>
   )
 }

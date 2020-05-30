@@ -1,0 +1,197 @@
+.Nav {
+  position: absolute;
+  top: 650px;
+  right: 820px;
+
+  &__container {
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__buttons {
+    position: relative;
+    bottom: 35px;
+    right: 52px;
+  }
+
+  &__buttons > div {
+    height: 0;
+    width: 0;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  &__button {
+
+    &--left,
+    &--right,
+    &--top {
+      transform-origin: 0 0;
+    }
+
+    &--left {
+      height: 100px;
+      width: 20px;
+      background-color: #d9d9d9;
+      transform: rotate(90deg) skewX(-30deg) scaleY(0.864);
+      position: relative;
+    }
+
+    &--right {
+      height: 20px;
+      width: 100px;
+      transform: rotate(-30deg) skewX(-30deg) scaleY(0.864);
+      position: relative;
+      bottom: 100px;
+      background-color: #c8c7c7;
+    }
+
+    &--top {
+      height: 100px;
+      width: 100px;
+      background-color: #fff;
+      transform: rotate(210deg) skewX(-30deg) scaleY(0.864);
+      position: relative;
+      bottom: 120px;
+      color: red;
+
+      i {
+        font-size: 50px;
+        transform: rotate(180deg);
+        position: relative;
+        top: 25px;
+        left: 25px;
+      }
+    }
+
+    &--shadow {
+      height: 50px;
+      width: 50px;
+      background-color: transparent;
+      transform: rotate(210deg) skewX(-30deg) scaleY(0.864);
+      position: relative;
+      top: 30px;
+      right: 30px;
+    }
+
+    &--contact {
+      position: relative;
+      top: 100px;
+      left: 500px;
+      i {
+        left: 35px;
+      }
+    }
+
+    &--about {
+      position: relative;
+      top: 150.5px;
+      left: 413px;
+      i {
+        left: 40px;
+      }
+    }
+
+    &--projects {
+      position: relative;
+      top: 200.5px;
+      left: 325.5px;
+    }
+
+    &--home {
+      position: relative;
+      top: 250px;
+      left: 239px;
+    }
+
+    &--about {
+      background-color: #2867B2;
+    }
+
+    &--projects {
+      background-color: #6cc644;
+    }
+
+    &--home {
+      background-color: #b743cc;
+    }
+  }
+
+  &__button:hover {
+    transform: translateY(-20px);
+
+    .Nav__button--shadow {
+      background-color: rgba(155, 155, 155, 0.25);
+      box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.09);
+      transform: rotate(210deg) skew(-30deg) scaleY(0.864) translateY(20px);
+    }
+
+    .Nav__button--top {
+      color: #fff
+    }
+  }
+
+  
+}
+
+.Nav__button--contact:hover {
+  .Nav__button--top {
+    background-color: #c32e00;
+  }
+
+  .Nav__button--left {
+    background-color: #d33303;
+  }
+
+  .Nav__button--right {
+    background-color: #bd2c00;
+  }
+}
+
+.Nav__button--about:hover {
+  .Nav__button--top {
+    background-color: #2867B2;
+  }
+
+  .Nav__button--left {
+    background-color: rgb(46, 115, 199);
+  }
+
+  .Nav__button--right {
+    background-color: rgb(44, 108, 187);
+  }
+}
+
+.Nav__button--projects:hover {
+  .Nav__button--top {
+    background-color: #6cc644;
+  }
+
+  .Nav__button--left {
+    background-color: #72d348;
+  }
+
+  .Nav__button--right {
+    background-color: #74da49;
+  }
+}
+
+.Nav__button--home:hover {
+  .Nav__button--top {
+    background-color: #b743cc;
+  }
+
+  .Nav__button--left {
+    background-color: #d34feb;
+  }
+
+  .Nav__button--right {
+    background-color: #be48d3;
+  }
+}

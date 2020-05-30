@@ -19,8 +19,10 @@
   }
 
   &__card:hover {
-    transform: translateY(-40px);
+    transform: translateY(-40px) translateX(20px);
   }
+
+  
 
   &__header {
     position: relative;
@@ -77,6 +79,7 @@
     color: rgb(141, 134, 134);
     text-overflow: clip;
     background-color: #fff;
+    transition: 0.5s;
   }
 
   
@@ -102,5 +105,21 @@
     background: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.5));
     transform: skewX(15deg) skewY(0) translateX(-68px) translateY(-18px);
     z-index: -1;
+  }
+
+  &__card:hover {
+
+    .ProjectCards__content::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 250px;
+      height: 400px;
+      background: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.5));
+      transform: skewX(15deg) skewY(0) translateX(-48px) translateY(10px);
+      filter: blur(10px);
+      z-index: -1;
+    }
   }
 }
