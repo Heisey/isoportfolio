@@ -1,0 +1,122 @@
+.ColorAppFace {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #8B00FF;
+
+  &__red {
+    position: absolute;
+    top: -70px;
+    left: 0;
+    background-color: #FF0000;
+    width: 20px;
+    height: 100%;
+    transform: rotate(45deg);
+  }
+
+  &__orange {
+    position: absolute;
+    top: -42px;
+    background-color: #FF7F00;
+    width: 20px;
+    height: 100%;
+    transform: rotate(45deg);
+  }
+
+  &__yellow {
+    position: absolute;
+    top: -34px;
+    left: 20px;
+    background-color: #FFFF00;
+    width: 20px;
+    height: 100%;
+    transform: rotate(45deg);
+  }
+
+  &__green {
+    position: absolute;
+    top: -66px;
+    left: 50px;
+    background-color: #00FF00;
+    width: 20px;
+    height: 140%;
+    transform: rotate(45deg);
+  }
+  
+  &__blue {
+    position: absolute;
+    top: -55px;
+    left: 60px;
+    background-color: #0000FF;
+    width: 20px;
+    height: 150%;
+    transform: rotate(45deg);
+  }
+
+  &__indigo {
+    position: absolute;
+    top: -60px;
+    left: 70px;
+    background-color: #2E2B5F;
+    width: 20px;
+    height: 180%;
+    transform: rotate(45deg);
+  }
+
+  &__palette {
+    color: white;
+    position: absolute;
+    font-size: 3rem;
+    bottom: 10%;
+    left: 30%;
+    transform: skew(-35deg);
+
+    &--red {
+      position: absolute;
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background-color: #FF0000;
+      top: 34px;
+      left: 6px;
+    }
+
+    &--yellow {
+      position: absolute;
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background-color: #FFFF00;
+      top: 22px;
+      left: 9px;
+    }
+
+    &--blue {
+      position: absolute;
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background-color: #0000FF;
+      top: 16px;
+      left: 21px;
+    }
+
+    &--green {
+      position: absolute;
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background-color: #00FF00;
+      top: 22px;
+      left: 33px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+    color: white;
+  }
+}

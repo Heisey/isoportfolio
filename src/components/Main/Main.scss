@@ -1,7 +1,22 @@
 .Main {
-  overflow: hidden;
+  transition: 0.3s linear;
+
+
+  &__arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 30%;
+    transform: translateX(-50%);
+  }
 
   &__end {
     height: 40vh;
   }
+}
+
+
+.ProjectCards__card--one:hover {
+  background-color: red;
+
+  
 }

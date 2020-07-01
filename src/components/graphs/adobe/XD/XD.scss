@@ -1,0 +1,36 @@
+
+#xd {
+  list-style: none;
+  
+  .GraphBody__bar--top {
+    z-index: 99;
+  }
+
+  .GraphBody__bar--bottom {
+    z-index: 99;
+
+    img {
+      padding-top: 15px;
+      padding-left: 25px;
+      height: 50px;
+      width: auto;
+      z-index: 100;
+    }
+  }
+}
+
+#xd:hover {
+  .GraphBody__bar--top {
+    z-index:999; 
+    background-color:#FD2AC0; 
+    margin-left:560px;
+  }
+
+  .GraphBody__bar--bottom {
+    z-index:998; 
+    background-color:#e827b0; 
+    width:600px;
+    background:-moz-linear-gradient(-90deg, #e827b0, #941970); 
+    background:-webkit-gradient(linear, 0 top, 0 bottom, from(#e827b0), to(#941970));
+  }
+}

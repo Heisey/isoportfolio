@@ -1,0 +1,21 @@
+.SchedulerFace {
+  background-color: #22303E;
+  height: 100%;
+  position: relative;
+
+  &__calendar {
+    position: absolute;
+    font-size: 100px;
+    top: 0;
+    left: 10%;
+    color: white;
+  }
+
+  &__title {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+  }
+}

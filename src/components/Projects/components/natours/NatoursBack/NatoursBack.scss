@@ -1,0 +1,69 @@
+.NatoursBack {
+  background-color: #40BD7F;
+  height: 100%;
+  position: relative;
+  color: white;
+
+  &__button {
+    &--repo {
+      position: absolute;
+      left: 20px;
+      bottom: 15px;
+    }
+
+    &--site {
+      position: absolute;
+      left: 100px;
+      bottom: 15px;
+    }
+  }
+
+  &__stack {
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    right: 0;
+    position: absolute;
+    // border-left: 2px solid white;
+    font-size: 0.6rem;
+    text-align: center;
+
+    span {
+      font-size: 1rem;
+    }
+    &--one {
+      padding: 0 4px;
+    }
+
+    &--two {
+      padding: 0 4px;
+    }
+
+    &--three {
+      padding: 0 4px;
+    }
+
+    &--four {
+      padding: 0 4px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 60%;
+    text-align: center;
+  }
+
+  &__summary {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    width: 60%;
+    font-size: 0.6rem;
+    text-align: justify;
+  }
+}

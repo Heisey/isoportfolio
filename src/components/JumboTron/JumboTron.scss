@@ -1,33 +1,29 @@
 .JumboTron {
-  margin-top: 15vh;
-  margin-left: -15vw;
   height: 100vh;
   max-height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
-
+  z-index: 10;
+  position: relative;
 
   &__text {
-    position: relative;
-    color: #fff;
-    font-weight: 700;
-    font-size: 12em;
-    line-height: 0.9em;
-    letter-spacing: 1px;
-    text-align: center;
-    transform: rotate(-28deg) skew(25deg);
-    transition: 0.5s
-  }
+    &--first {
+      position: absolute;
+      top: 25%;
+      left: 18%;
+    }
 
-  &__text::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 20px;
-    left: -20px;
-    color: rgba(0, 0, 0, 0.3);
-    text-shadow: none;
-    filter: blur(8px);
-    z-index: -1;
+    &--last {
+      position: absolute;
+      top: 35%;
+      left: 24%;
+    }
+
+    &--nick {
+      position: absolute;
+      top: 46%;
+      left: 31%;
+    }
   }
-  
 }

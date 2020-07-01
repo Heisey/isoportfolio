@@ -1,0 +1,22 @@
+.About {
+  position: relative;
+  min-height: 170vh;
+
+  &__history {
+    position: absolute;
+    top: 950px;
+    left: 30%;
+  }
+
+  &__interests {
+    position: absolute;
+    top: 650px;
+    left: 60%;
+  }
+
+  &__future {
+    position: absolute;
+    top: 1350px;
+    left: 55%;
+  }
+}

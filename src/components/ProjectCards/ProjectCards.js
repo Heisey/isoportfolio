@@ -1,54 +1,58 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import CardOneFront from '../cards/CardOne/CardOneFront'
+import CardOneBack from '../cards/CardOne/CardOneBack'
+
+import ReactCardFlip from 'react-card-flip';
 
 import './ProjectCards.scss';
 
 export default function ProjectCards(props) {
 
+  const { 
+    children,
+    cardHoverHandler,
+    cardNumber
+  } = props
+
+  const [transformCard, transformCardHandler] = useState(false)
+
+  const startCardHover = () => {
+    cardHoverHandler(true)
+  }
+
+  const endCardHover = () => {
+    cardHoverHandler(false)
+  }
+
+  const handleCardFlip = () => {
+
+    transformCardHandler(!transformCard)
+  }
+
   return (
-    <div className="ProjectCards">
-      <div className="ProjectCards__card">
-        <div className="ProjectCards__header">
-          <i className="ProjectCards__header--image fas fa-project-diagram"></i>
-          <h3 className="ProjectCards__header--title">Project 1</h3>
+    <div 
+      className="ProjectCards"
+      onMouseEnter={startCardHover}
+      onMouseLeave={endCardHover}
+    >
+      <ReactCardFlip 
+        isFlipped={transformCard}
+        flipDirection="vertical"
+      >
+        <div 
+          className="ProjectCards__face"
+          onClick={handleCardFlip}
+        >
+          {children[0]}
         </div>
-        <div className="ProjectCards__content">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat.</p>
+        <div
+          className="ProjectCards__back"
+          onClick={handleCardFlip}
+        >
+          {children[1]}
         </div>
-      </div>
-
-      <div className="ProjectCards__card">
-        <div className="ProjectCards__header">
-          <i className="ProjectCards__header--image fas fa-project-diagram"></i>
-          <h3 className="ProjectCards__header--title">Project 2</h3>
-        </div>
-        <div className="ProjectCards__content">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div>
-
-      <div className="ProjectCards__card">
-        <div className="ProjectCards__header">
-          <i className="ProjectCards__header--image fas fa-project-diagram"></i>
-          <h3 className="ProjectCards__header--title">Project 3</h3>
-        </div>
-        <div className="ProjectCards__content">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea.</p>
-        </div>
-      </div>
-
-      
+      </ReactCardFlip>
     </div>
   )
 }

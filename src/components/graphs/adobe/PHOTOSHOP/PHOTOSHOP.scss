@@ -1,0 +1,38 @@
+
+#photoshop {
+  padding-top: 20px;
+  list-style: none !important;
+  
+  .GraphBody__bar--top {
+    margin-top: 5px;
+    z-index: 99;
+  }
+
+  .GraphBody__bar--bottom {
+    z-index: 99;
+
+    img {
+      padding-top: 15px;
+      padding-left: 25px;
+      height: 50px;
+      width: auto;
+      z-index: 100;
+    }
+  }
+}
+
+#photoshop:hover {
+  .GraphBody__bar--top {
+    z-index:999; 
+    background-color:#A0CBFE; 
+    margin-left:100px;
+  }
+
+  .GraphBody__bar--bottom {
+    z-index:998; 
+    background-color:#8db4e3; 
+    width:140px;
+    background:-moz-linear-gradient(-90deg, #8db4e3, #647fa1); 
+    background:-webkit-gradient(linear, 0 top, 0 bottom, from(#8db4e3), to(#647fa1));
+  }
+}

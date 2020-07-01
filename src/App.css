@@ -1,3 +1,63 @@
 .App {
   background-color: #f1f1f1;
 }
+
+.one {
+  background-color: rgba(7, 99, 112, 0.6) !important;
+}
+
+.two {
+  background-color: rgba(84, 155, 186, 0.6) !important;
+}
+
+.three {
+  background-color: rgba(34,48,62, 0.6);
+}
+
+.four {
+  background-color: rgba(139, 0, 255, 0.6);
+}
+
+.five {
+  background-color: rgba(64,189,127, 0.6);
+}
+
+.six {
+  background-color: rgba(255, 190, 97, 0.6);
+}
+
+.oneColor {
+  color: #076370 !important;
+}
+
+.threeColor {
+  color: #22303E !important;
+}
+
+.twoColor {
+  color: #549BBA !important;
+}
+
+.fourColor {
+  color: #8B00FF !important;
+}
+
+.fiveColor {
+  color: #40BD7F !important;
+}
+
+.sixColor {
+  color: #FFBE61 !important;
+}
+
+.gitHubColor {
+  color: #6cc644 !important;
+}
+
+.linkedinColor {
+  color: #2867B2 !important;
+}
+
+.emailColor {
+  color: #c32e00 !important;
+}

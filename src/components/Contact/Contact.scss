@@ -1,104 +1,11 @@
-
-.contact {
-  width: 300px;
-  height: 100px;
-  margin: 100px auto;
-  perspective: 600px;
-  -webkit-perspective: 600px;
-}
-.form {
-  width: inherit;
-  height: inherit;
+.Contact {
+  height: 100vh;
   position: relative;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-}
-.form-face {
-  width: inherit;
-  height: inherit;
-  position: absolute;
-  background-color: #61aaca;
-}
-.form-side {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  background-color: #61aaca;
-}
-.front {
-  line-height: 100px;
-  text-align: center;
-  transform: translate3d(0,0,50px);
-  -webkit-transform: translate3d(0,0,50px);
-}
-.front h1 {
-  vertical-align: middle;
-  color: #fff;
-  font-size: 40px;
-}
-.top {
-  transform: rotateX(90deg) translate3d(0,0,50px);
-  -webkit-transform: rotateX(90deg) translate3d(0,0,50px);
-}
-.back {
-  transform: rotateY(180deg) translate3d(0,0,50px);
-  -webkit-transform: rotateY(180deg) translate3d(0,0,50px);
-}
-.bottom {
-  transform: rotatex(-90deg) translate3d(0,0,50px);
-  -webkit-transform: rotatex(-90deg) translate3d(0,0,50px);
-}
-.bottom input {
-  width: 200px;
-  height: 40px;
-  margin: 30px 25px;
-  padding: 20px;
-  border-radius: 15px;
-  border: none;
-}
-.bottom button {
-  width: 40px;
-  height: 40px;
-  border: none;
-  background: none;
-  line-height: 40px;
-  cursor: pointer;
-}
-.bottom button i {
-  vertical-align: middle;
-  font-size: 30px;
-  color: #fff;
-}
-.right {
-  transform: rotateY(90deg) translate3d(0,0,250px);
-  -webkit-transform: rotateY(90deg) translate3d(0,0,250px);
-  
-}
-.left {
-  transform: rotateY(-90deg) translate3d(0,0,50px);
-  -webkit-transform: rotateY(-90deg) translate3d(0,0,50px);
-}
-@keyframes rotateTop {
-  0% {transform: rotateX(0deg); }
-  20% {transform: rotateX(-10deg); }
-  80% {transform: rotateX(100deg); }
-  100% {transform: rotateX(90deg); }
-}
-@-webkit-keyframes rotateTop {
-  0% {-webkit-transform: rotateX(0deg); }
-  20% {-webkit-transform: rotateX(-10deg); }
-  80% {-webkit-transform: rotateX(100deg); }
-  100% {-webkit-transform: rotateX(90deg); }
-}
-@-webkit-keyframes rotate {
-  0% {-webkit-transform: rotateX(90deg); }
-  20% {-webkit-transform: rotateX(100deg); }
-  80% {-webkit-transform: rotateX(-10deg); }
-  100% {-webkit-transform: rotateX(0deg); }
-}
-@-webkit-keyframes rotateRight {
-  0% {-webkit-transform: rotateY(0deg); }
-  20% {-webkit-transform: rotateY(-10deg); }
-  80% {-webkit-transform: rotateY(100deg); }
-  100% {-webkit-transform: rotateY(90deg); }
+  perspective: 15000px;
+  width: 100%;
+
+  &__phone {
+    position: absolute;
+    left: 50%;
+  }
 }

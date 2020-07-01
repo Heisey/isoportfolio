@@ -1,0 +1,61 @@
+.CrystalMayFace {
+  position: relative;
+  background-color: #FFBE61;
+  height: 100%;
+  z-index: -1;
+
+  &__circle {
+    &--one {
+      position: absolute;
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      right: -20px;
+      top: -10px;
+      background-color: #FDFD96;
+    }
+    
+    &--two {
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      left: 100px;
+      bottom: 10px;
+      background-color: #F37272;
+    }
+
+    
+    &--three {
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      left: 18px;
+      top: 15px;
+      background-color: #94FFBB;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 80%;
+
+    img {
+      height: 100%;
+      width: auto;
+      z-index: 50;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    z-index: 50;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+  }
+}

@@ -1,0 +1,98 @@
+.Skills {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  min-height: 1350px;
+
+  &__cubes {
+    padding-top: 13em;
+    position: absolute;
+    bottom: 20%;
+  }
+
+  &__graph {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+
+    // &::before {
+    //   content: 'WEAK';
+    //   position: absolute;
+    //   bottom: 0px;
+    //   left: -56px;
+    //   color: red;
+    //   font-weight: bolder;
+    //   font-size: 1.8rem;
+    //   transform: rotate(315deg) skewX(35deg);
+    //   transform-origin: right top;
+    //   z-index: 50;
+    // }
+
+    // &::after {
+    //   content: 'STRONG';
+    //   position: absolute;
+    //   bottom: -80px;
+    //   right: -54px;
+    //   color: green;
+    //   font-weight: bolder;
+    //   font-size: 1.8rem;
+    //   transform: rotate(45deg) skewX(-35deg);
+    //   transform-origin: right top;
+    //   z-index: 50;
+    // }
+  }
+
+  &__floor {
+    position: absolute;
+    top: 1040px;
+    bottom: 50px;
+    left: 300px;
+    right: -570px;
+    // -webkit-clip-path: polygon(0% 0%, 88.6% 100%, 100% 100%, 90% 100%);
+    clip-path: polygon(17.4% 0%, 77.6% 0%, 85.6% 37.7%, 11.7% 27%);
+    background-color: gold;
+    background-image: -webkit-linear-gradient(right, #ccc, #ccc);
+    // border-bottom: 20px solid red;
+  }
+
+  &__text {
+
+    &--xd,
+    &--photoshop,
+    &--illustrator { 
+      width: 500px;
+      padding: 20px;
+      box-sizing: border-box;
+      position: absolute;
+      top: 70%;
+      left: 60%;
+      transition: 0.5s ease-in-out;
+      transform: rotateX(90deg);
+    }
+
+    &--xdText,
+    &--photoshopText,
+    &--illustrator {
+      font-size: 20px;
+      line-height: 20px;
+      text-align: justify;
+    }
+
+    &--xdText {
+      color: #941970 !important;
+    }
+
+    &--photoshopText {
+      color: #647fa1;
+    }
+
+    &--illustrator {
+      color: #a16202;
+    }
+  }
+
+  &__textActive {
+    transform: rotateX(0deg);
+  }
+}
+

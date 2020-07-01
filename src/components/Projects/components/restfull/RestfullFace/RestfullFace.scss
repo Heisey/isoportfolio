@@ -1,0 +1,29 @@
+.RestfullFace {
+  position: relative;
+  background-color: #549BBA;
+  height: 100%;
+  z-index: 10;
+
+  &__logo {
+    position: absolute;
+    height: 150px;
+
+    img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 130px;
+      width: auto;
+      z-index: 50;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    z-index: 100;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+  }
+}

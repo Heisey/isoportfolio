@@ -2,6 +2,7 @@
   position: absolute;
   top: 650px;
   right: 820px;
+  z-index: 20;
 
   &__container {
     height: 350px;
@@ -82,7 +83,16 @@
 
     &--contact {
       position: relative;
-      top: 100px;
+      top: 52px;
+      left: 586px;
+      i {
+        left: 35px;
+      }
+    }
+
+    &--skills {
+      position: relative;
+      top: 102px;
       left: 500px;
       i {
         left: 35px;
@@ -136,8 +146,6 @@
       color: #fff
     }
   }
-
-  
 }
 
 .Nav__button--contact:hover {
@@ -154,9 +162,69 @@
   }
 }
 
+.Nav__button--contactActive {
+  .Nav__button--top {
+    background-color: #c32e00;
+    color: white;
+  }
+
+  .Nav__button--left {
+    background-color: #d33303;
+  }
+
+  .Nav__button--right {
+    background-color: #bd2c00;
+  }
+}
+
+.Nav__button--skills:hover {
+  .Nav__button--top {
+    background-color: #ffa34d;
+  }
+
+  .Nav__button--left {
+    background-color: #d33303;
+  }
+
+  .Nav__button--right {
+    background-color: #bd2c00;
+  }
+}
+
+.Nav__button--skillsActive {
+  .Nav__button--top {
+    background-color: #ffa34d;
+    color: white;
+  }
+
+  .Nav__button--left {
+    background-color: #d33303;
+  }
+
+  .Nav__button--right {
+    background-color: #bd2c00;
+  }
+}
+
+
 .Nav__button--about:hover {
   .Nav__button--top {
     background-color: #2867B2;
+  }
+
+  .Nav__button--left {
+    background-color: rgb(46, 115, 199);
+  }
+
+  .Nav__button--right {
+    background-color: rgb(44, 108, 187);
+  }
+}
+
+.Nav__button--aboutActive {
+  .Nav__button--top {
+    background-color: #2867B2;
+    color: white;
   }
 
   .Nav__button--left {
@@ -182,9 +250,39 @@
   }
 }
 
+.Nav__button--projectsActive {
+  .Nav__button--top {
+    background-color: #6cc644;
+    color: white;
+  }
+
+  .Nav__button--left {
+    background-color: #72d348;
+  }
+
+  .Nav__button--right {
+    background-color: #74da49;
+  }
+}
+
 .Nav__button--home:hover {
   .Nav__button--top {
     background-color: #b743cc;
+  }
+
+  .Nav__button--left {
+    background-color: #d34feb;
+  }
+
+  .Nav__button--right {
+    background-color: #be48d3;
+  }
+}
+
+.Nav__button--homeActive {
+  .Nav__button--top {
+    background-color: #b743cc;
+    color: white;
   }
 
   .Nav__button--left {

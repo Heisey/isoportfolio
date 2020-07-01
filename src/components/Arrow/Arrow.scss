@@ -1,0 +1,186 @@
+.ArrowProjects {
+  &__caret {
+    position:absolute;
+   margin-top:5rem;
+   transform: rotate(0deg);
+   opacity: 0;
+   animation: fadeInOut 4s;
+   animation-iteration-count:infinite;
+} 
+
+&__caret:before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: -18px;
+  transition: 0.4s;
+  border-top: 100px solid #6cc644;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+}
+&__caret:after {
+  content: '';
+    position: absolute;
+    left: -7.6px;
+    top: 46px;
+    transition: 0.4s;
+    border-top: 90px solid #72d348;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+}
+
+&__caret1:after{
+        content: '';
+    position: absolute;
+    top: 65px;
+    left: -20.1px;
+    transition: 0.4s;
+    border-top: 100px solid #67fc23;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+}
+
+.ArrowAbout {
+  &__caret {
+    position:absolute;
+   margin-top:5rem;
+   transform: rotate(0deg);
+   opacity: 0;
+   animation: fadeInOut 4s;
+   animation-iteration-count:infinite;
+} 
+
+&__caret:before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: -18px;
+  transition: 0.4s;
+  border-top: 100px solid #2867B2;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+}
+&__caret:after {
+  content: '';
+    position: absolute;
+    left: -7.6px;
+    top: 46px;
+    transition: 0.4s;
+    border-top: 90px solid #244f82;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+}
+
+&__caret1:after{
+        content: '';
+    position: absolute;
+    top: 65px;
+    left: -20.1px;
+    transition: 0.4s;
+    border-top: 100px solid #195ba8;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+}
+
+.ArrowSkills {
+  &__caret {
+    position:absolute;
+   margin-top:5rem;
+   transform: rotate(0deg);
+   opacity: 0;
+   animation: fadeInOut 4s;
+   animation-iteration-count:infinite;
+} 
+
+&__caret:before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: -18px;
+  transition: 0.4s;
+  border-top: 100px solid #2ea0ab;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+}
+&__caret:after {
+  content: '';
+    position: absolute;
+    left: -7.6px;
+    top: 46px;
+    transition: 0.4s;
+    border-top: 90px solid #297d85;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+}
+
+&__caret1:after{
+        content: '';
+    position: absolute;
+    top: 65px;
+    left: -20.1px;
+    transition: 0.4s;
+    border-top: 100px solid #23c9d9;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+}
+
+.ArrowContact {
+  &__caret {
+    position:absolute;
+   margin-top:5rem;
+   transform: rotate(0deg);
+   opacity: 0;
+   animation: fadeInOut 4s;
+   animation-iteration-count:infinite;
+} 
+
+&__caret:before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: -18px;
+  transition: 0.4s;
+  border-top: 100px solid #c32e00;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+}
+&__caret:after {
+  content: '';
+    position: absolute;
+    left: -7.6px;
+    top: 46px;
+    transition: 0.4s;
+    border-top: 90px solid #a32e0a;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+}
+
+&__caret1:after{
+        content: '';
+    position: absolute;
+    top: 65px;
+    left: -20.1px;
+    transition: 0.4s;
+    border-top: 100px solid #ed3c05;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+}
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,15 @@
+.Projects {
+  // background-color: purple;
+  // margin-top: -10em;
+  min-height: 1200px;
+
+  &__cards {
+    padding-top: 4rem;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 120px;
+  }
+
+}

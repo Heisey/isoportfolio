@@ -1,0 +1,141 @@
+.NatoursFace {
+  position: relative;
+  background-color: #40BD7F;
+  height: 100%;
+  z-index: -1;
+
+  &__ground {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #197547;
+    // transform: rotateX(35deg);
+    z-index: 10;
+  }
+
+  &__tree {
+    // position: absolute;
+    z-index: 15;
+
+    &--trunk {
+      position: absolute;
+      bottom: 10px;
+      left: 55px;
+      width: 20px;
+      height: 60px;
+      background-color: #302621 ;
+      z-index: 20;
+    }
+
+    &--branchOne {
+      position: absolute;
+      left: 25px;
+      top: 90px;
+      width: 0; 
+      height: 0; 
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      z-index: 30;
+      border-bottom: 40px solid #03944B;
+
+    }
+
+    &--branchTwo {
+      position: absolute;
+      left: 30px;
+      top: 80px;
+      width: 0; 
+      height: 0; 
+      border-left: 35px solid transparent;
+      border-right: 35px solid transparent;
+      z-index: 30;
+      border-bottom: 35px solid #039C4F;
+
+    }
+
+    &--branchThree {
+      position: absolute;
+      left: 35px;
+      top: 70px;
+      width: 0; 
+      height: 0; 
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      z-index: 30;
+      border-bottom: 30px solid #03A453;
+
+    }
+
+    &--branchFour {
+      position: absolute;
+      left: 40px;
+      top: 60px;
+      width: 0; 
+      height: 0; 
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      z-index: 30;
+      border-bottom: 25px solid #03AC57;
+
+    }
+
+    &--branchFive {
+      position: absolute;
+      left: 45px;
+      top: 50px;
+      width: 0; 
+      height: 0; 
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      z-index: 30;
+      border-bottom: 20px solid #04B45B;
+
+    }
+  }
+
+  &__cloud {
+    &--one {
+      position: absolute;
+      color: white;
+      font-size: 2.5rem;
+      top: 30px;
+      left: 35px;
+    }
+
+    &--two {
+      position: absolute;
+      color: white;
+      font-size: 2rem;
+      top: 15px;
+      left: 120px;
+    }
+  }
+
+  &__sun {
+    position: absolute;
+    font-size: 3rem;
+    color: yellow;
+    right: -20px;
+    top: -20px;
+  }
+
+  &__tent {
+    position: absolute;
+    right: 40px;
+    bottom: 10px;
+    font-size: 3rem;
+    z-index: 110;
+    color: #541d1e;
+  }
+
+  &__title {
+    position: absolute;
+    z-index: 50;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+  }
+}

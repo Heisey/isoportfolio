@@ -1,0 +1,30 @@
+
+#sass {
+  padding-top: 20px;
+  list-style: none !important;
+  
+  .GraphBody__bar--top {
+    margin-top: 5px;
+    z-index: 99;
+  }
+
+  .GraphBody__bar--bottom {
+    z-index: 99;
+  }
+}
+
+#sass {
+  .GraphBody__bar--top {
+    z-index:999; 
+    background-color:#1f81ac; 
+    margin-left:760px;
+  }
+
+  .GraphBody__bar--bottom {
+    z-index:998; 
+    background-color:#1a6c90; 
+    width:800px;
+    background:-moz-linear-gradient(-90deg, #1a6c90, #14506b); 
+    background:-webkit-gradient(linear, 0 top, 0 bottom, from(#1a6c90), to(#14506b));
+  }
+}
