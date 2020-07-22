@@ -15,7 +15,7 @@ export default function Main(props) {
   const [showContact, setShowContact] = useState(false)
   const [showLanding, setShowLanding] = useState(false)
   const [showProjects, setShowProjects] = useState(false)
-  const [showSkills, setShowSkills] = useState(true)
+  const [showSkills, setShowSkills] = useState(false)
 
   const [card1Hover, card1HoverHandler] = useState(false)
   const [card2Hover, card2HoverHandler] = useState(false)
