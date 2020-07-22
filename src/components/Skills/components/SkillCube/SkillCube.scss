@@ -1,0 +1,284 @@
+.SkillCube {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  text-align: left;
+
+
+  &__face {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    transform-origin: 0 0;
+
+    &--top {
+      transform: rotate(210deg) skewX(-30deg) scaleY(0.864);
+    }
+
+    &--left {
+      transform: rotate(90deg) skewX(-30deg) scaleY(0.864);
+    }
+
+    &--right {
+      transform: rotate(-30deg) skewX(-30deg) scaleY(0.864);
+    }
+  }
+
+  &__topFace {
+    height: 100%;
+    transform-origin: 50% 50%;
+    transform: rotate(90deg);
+    text-align: center;
+    
+    span {
+      display: block;
+      padding-top: 30px;
+    }
+  }
+
+  &__leftFace {
+    height: 100%;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    span {
+      display: block;
+      // font-size: 50px;
+    }
+
+    
+  }
+
+  &__rightFace {
+    height: 100%;
+    transform-origin: 50% 50%;
+    // transform: rotate(-90deg);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    span {
+      display: block;
+      font-size: 30px;
+    }
+
+    img {
+      height: auto;
+      width: 30px;
+    }
+  }
+
+  
+
+  
+
+}
+
+#htmlCube {
+  .SkillCube__face--top {
+    background-color: #de3002;
+  }
+
+  .SkillCube__face--left {
+    background-color: #e36544;
+  }
+
+  .SkillCube__face--right {
+    background-color: #E44D26;
+  }
+}
+
+#sassCube {
+  .SkillCube__face--top {
+    background-color: #c95b91;
+  }
+
+  .SkillCube__face--left {
+    background-color: #cc85a8;
+  }
+
+  .SkillCube__face--right {
+    background-color: #cc6699;
+  }
+}
+
+#javascriptCube {
+  .SkillCube__face--top {
+    background-color: #e6cd27;
+  }
+
+  .SkillCube__face--left {
+    background-color: #eddd6f;
+  }
+
+  .SkillCube__face--right {
+    background-color: #f0db4f;
+  }
+}
+
+#reactCube {
+  .SkillCube__face--top {
+    background-color: #2acdf7;
+  }
+
+  .SkillCube__face--left {
+    background-color: #93e5fa;
+  }
+
+  .SkillCube__face--right {
+    background-color: #61DBFB;
+  }
+}
+
+#purpleCube {
+  .SkillCube__face--top {
+    background-color: #ac1fc4;
+  }
+
+  .SkillCube__face--left {
+    background-color: #b969c7;
+  }
+
+  .SkillCube__face--right {
+    background-color: #b743cc;
+  }
+}
+
+#greenCube {
+  .SkillCube__face--top {
+    background-color: #52c91c;
+  }
+
+  .SkillCube__face--left {
+    background-color: #8bc96f;
+  }
+
+  .SkillCube__face--right {
+    background-color: #6cc644;
+  }
+}
+
+#denoCube {
+  .SkillCube__face--top {
+    background-color: #0a0a0a;
+  }
+
+  .SkillCube__face--left {
+    background-color: #4d4d4d;
+    color: white;
+  }
+
+  .SkillCube__face--right {
+    background-color: #2b2b2b;
+    color: white;
+  }
+}
+
+
+#mongoDBCube {
+  .SkillCube__face--top {
+    background-color: #2bb518;
+  }
+
+  .SkillCube__face--left {
+    background-color: #73b869;
+  }
+
+  .SkillCube__face--right {
+    background-color: #4DB33D;
+  }
+}
+
+
+#nodeCube {
+  .SkillCube__face--top {
+    background-color: #52994b;
+  }
+
+  .SkillCube__face--left {
+    background-color: #799e75;
+  }
+
+  .SkillCube__face--right {
+    background-color: #68A063;
+  }
+}
+
+
+#postgressCube {
+  .SkillCube__face--top {
+    background-color: #008bb9;
+  }
+
+  .SkillCube__face--left {
+    background-color: #519cb5;
+  }
+
+  .SkillCube__face--right {
+    background-color: #2d97ba;
+  }
+}
+
+
+#orangeCube {
+  .SkillCube__face--top {
+    background-color: #ff8e24;
+  }
+
+  .SkillCube__face--left {
+    background-color: #ffc187;
+  }
+
+  .SkillCube__face--right {
+    background-color: #ffa34d;
+  }
+}
+
+#xdCube {
+  .SkillCube__face--top {
+    background-color: #ff03b6;
+  }
+
+  .SkillCube__face--left {
+    background-color: #fa55ca;
+  }
+
+  .SkillCube__face--right {
+    background-color: #FD2AC0;
+  }
+}
+
+
+#photoshopCube {
+  .SkillCube__face--top {
+    background-color: #74b2fc;
+  }
+
+  .SkillCube__face--left {
+    background-color: #badaff;
+  }
+
+  .SkillCube__face--right {
+    background-color: #A0CBFE;
+  }
+}
+
+
+#illustratorCube {
+  .SkillCube__face--top {
+    background-color: #FF9B00;
+  }
+
+  .SkillCube__face--left {
+    background-color: #fcbf60;
+  }
+
+  .SkillCube__face--right {
+    background-color: #ffb036;
+  }
+}

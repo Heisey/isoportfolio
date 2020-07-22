@@ -96,6 +96,7 @@ export default function Cube(props) {
           <div 
             class={`Cube__btn ${backSkills && 'Cube__btn--active'}`}
             onClick={handleBackSkills}
+            id="backSkillsButton"
           >
             <div class="Cube__btn--innerWrapper">
               <i class="fas fa-server"></i>

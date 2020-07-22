@@ -3,6 +3,11 @@
   // margin-top: -10em;
   min-height: 1200px;
 
+  &__header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   &__cards {
     padding-top: 4rem;
     width: 80%;
@@ -12,4 +17,63 @@
     grid-row-gap: 120px;
   }
 
+}
+
+@media
+  (max-width: 1050px)
+  {
+  .Projects {
+
+    
+    &__header {
+      transform: scale(0.7);
+    }
+  }
+}
+
+@media
+  (max-width: 800px)
+  {
+  .Projects {
+
+    
+    &__header {
+      transform: scale(0.5);
+    }
+
+    &__cards {
+      padding-top: 0;
+      width: 75%;
+      margin: 0 auto;
+      margin-right: 1vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 120px;
+      
+    }
+  }
+}
+
+
+@media
+  (max-width: 700px)
+  {
+  .Projects {
+
+    
+    &__header {
+      transform: scale(0.4);
+    }
+
+    &__cards {
+      padding-top: 0;
+      width: 75%;
+      margin: 0 auto;
+      margin-right: 1vw;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 120px;
+      
+    }
+  }
 }

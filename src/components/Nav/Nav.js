@@ -61,7 +61,7 @@ export default function Nav(props) {
       <div className="Nav__container">
         <div className="Nav__buttons">
           
-          <div 
+          {/* <div 
             className={
               `
                 Nav__button 
@@ -76,7 +76,7 @@ export default function Nav(props) {
             <div className="Nav__button--top">
               <i class="fas fa-mobile-alt"></i>
             </div>
-          </div>
+          </div> */}
 
           <div 
             className={

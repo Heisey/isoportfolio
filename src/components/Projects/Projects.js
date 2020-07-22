@@ -42,15 +42,18 @@ export default function Projects(props) {
 
   return (
     <div className={`Projects`}>
-      <Header 
-        title="PROJECTS" 
-        card1Hover={card1Hover}
-        card2Hover={card2Hover}
-        card3Hover={card3Hover}
-        card4Hover={card4Hover}
-        card5Hover={card5Hover}
-        card6Hover={card6Hover}
-      />
+      <div className="Projects__header">
+        <Header 
+          title="PROJECTS" 
+          card1Hover={card1Hover}
+          card2Hover={card2Hover}
+          card3Hover={card3Hover}
+          card4Hover={card4Hover}
+          card5Hover={card5Hover}
+          card6Hover={card6Hover}
+        />
+      </div>
+      
 
       <div className="Projects__cards">
         <ProjectCard 

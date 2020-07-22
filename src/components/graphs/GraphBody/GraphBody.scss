@@ -4,7 +4,7 @@
   ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,macbook,p,blockquote,fieldset,input{margin:0; padding:0;}
 
   width: 800px;
-  margin: 40px auto;
+  margin: 0px auto;
   padding-bottom: 40px;
   border-bottom: 40px solid transparent;
   position: relative;
@@ -13,8 +13,8 @@
     position: absolute;
     height: 40px;
     width: 800px;
-    bottom: -40px;
-    background-image: -webkit-linear-gradient(right, green, red);
+    bottom: -140px;
+    // background-image: -webkit-linear-gradient(right, green, red);
 
   }
 
@@ -41,10 +41,10 @@
     }
 
     &--top {
-      background-color:rgba(213,238,241,0.5); 
       position:relative; 
       float:left;
-      margin-left: 10px;
+      margin-top: 5px;
+      margin-left: 15px;
       width:40px; 
       height:100px; 
       -moz-border-radius: 40px/100px; 

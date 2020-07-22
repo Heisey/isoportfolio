@@ -4,7 +4,7 @@
     position: absolute;
     top: 20vh;
     left: 40vw;
-    transform: rotate(30deg);
+    transform: rotate(32deg);
     margin: 0;
     padding: 0;
     display: flex;
@@ -115,3 +115,130 @@
   }
 }
 
+@media (max-width: 1650px) {
+  .SocialMediaButtons {
+
+    &__list {
+      position: absolute;
+      top: 20vh;
+      left: 40vw;
+      transform: rotate(32deg) scale(0.85);
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  .SocialMediaButtons {
+
+    &__list {
+      position: absolute;
+      top: 22vh;
+      left: 40vw;
+      transform: rotate(32deg) scale(0.7);
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .SocialMediaButtons {
+
+    &__list {
+      position: absolute;
+      top: 25vh;
+      left: 32vw;
+      transform: rotate(32deg) scale(0.6);
+    }
+  }
+}
+
+
+@media 
+  only screen and (max-width: 800px) {
+    .SocialMediaButtons {
+
+      &__list {
+        position: absolute;
+        top: 28vh;
+        left: 9vw;
+        transform: rotate(35deg) scale(0.4);
+      }
+
+      &__item {
+        list-style: none;
+        margin: 0 105px;
+      }
+    }
+}
+
+
+@media 
+  only screen and (max-width: 800px) and (max-height: 450px) {
+    .SocialMediaButtons {
+
+      &__list {
+        position: absolute;
+        top: 25vh;
+        left: 8vw;
+        transform: rotate(32deg) scale(0.4);
+      }
+
+      &__item {
+        list-style: none;
+        margin: 0 65px;
+      }
+    }
+}
+
+@media 
+  only screen and (max-width: 700px) and (max-height: 450px) {
+    .SocialMediaButtons {
+
+      &__list {
+        position: absolute;
+        top: 15vh;
+        left: 4vw;
+        transform: rotate(32deg) scale(0.4);
+      }
+
+      &__item {
+        list-style: none;
+        margin: 0 65px;
+      }
+    }
+}
+
+@media 
+  only screen and (max-width: 450px) {
+    .SocialMediaButtons {
+
+      &__list {
+        position: absolute;
+        top: 12vh;
+        right: 2vw;
+        transform: rotate(35deg) scale(0.4);
+      }
+
+      &__item {
+        list-style: none;
+        margin: 0 85px;
+      }
+    }
+}
+
+@media 
+  only screen and (max-width: 450px) {
+    .SocialMediaButtons {
+
+      &__list {
+        position: absolute;
+        top: 12vh;
+        right: 2vw;
+        transform: rotate(35deg) scale(0.35);
+      }
+
+      &__item {
+        list-style: none;
+        margin: 0 85px;
+      }
+    }
+}

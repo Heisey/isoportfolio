@@ -1,19 +1,22 @@
 import React from 'react'
 
-import HTML from '../frontEnd/HTML/HTML'
-import REACT from '../frontEnd/REACT/REACT'
-import REACTNATIVE from '../frontEnd/REACTNATIVE/REACTNATIVE'
-import SASS from '../frontEnd/SASS/SASS'
 
-import EXPRESS from '../backEnd/EXPRESS/EXPRESS'
-import NODE from '../backEnd/NODE/NODE'
-import POSTGRESS from '../backEnd/PROSTGRESS/POSTGRESS'
-
-import ILLUSTRATOR from '../adobe/ILLUSTRATOR/ILLUSTRATOR'
-import PHOTOSHOP from '../adobe/PHOTOSHOP/PHOTOSHOP'
-import XD from '../adobe/XD/XD'
 
 import './GraphBody.scss';
+import GraphBar from '../GraphBar/GraphBar'
+
+import denoImg from '../../../images/deno.png'
+import expressImg from '../../../images/express.png'
+import html5Img from '../../../images/html5.png'
+import illustratorImg from '../../../images/illustrator.png'
+import javascriptImg from '../../../images/javascript.png';
+import mongoDBImg from '../../../images/mongodb.png'
+import nodeImg from '../../../images/node.png'
+import photoshopImg from '../../../images/photoshop.png'
+import postgress from '../../../images/postgress.png'
+import reactImg from '../../../images/react.png'
+import sassImg from '../../../images/sass.png'
+import xdImg from '../../../images/xd.png'
 
 export default function GraphBody(props) {
 
@@ -23,7 +26,16 @@ export default function GraphBody(props) {
     showFrontSkills,
     showXDTextHandler,
     showPhotoshopTextHandler,
-    showIllustratorTextHandler
+    showIllustratorTextHandler,
+    showNodeTextHandler,
+    showDenoTextHandler,
+    showExpressTextHandler,
+    showMongoTextHandler,
+    showPostgresTextHandler,
+    showHtmlTextHandler,
+    showCssTextHandler,
+    showJavascriptTextHandler,
+    showReactTextHandler
   } = props
 
   return (
@@ -32,32 +44,82 @@ export default function GraphBody(props) {
       <ul id="GraphBody__bar">
         {showFrontSkills && (
           <>
-            <HTML />
-            <SASS />
-            <REACT />
-            <REACTNATIVE />
+            <GraphBar
+              imageURL={html5Img}
+              name="html5"
+              showTextHandler={showHtmlTextHandler}
+            />
+            
+            <GraphBar
+              imageURL={sassImg}
+              name="sass"
+              showTextHandler={showCssTextHandler}
+            />
+
+            <GraphBar
+              imageURL={javascriptImg}
+              name="javascript"
+              showTextHandler={showJavascriptTextHandler}
+            />
+
+            <GraphBar
+              imageURL={reactImg}
+              name="react"
+              showTextHandler={showReactTextHandler}
+            />
+            
           </>
         )}
 			
         {showBackSkills && (
           <>
-            <NODE />
-            <EXPRESS />
-            <POSTGRESS />
+          <GraphBar
+              imageURL={nodeImg}
+              name="node"
+              showTextHandler={showNodeTextHandler}
+            />
+            <GraphBar
+              imageURL={denoImg}
+              name="deno"
+              showTextHandler={showDenoTextHandler}
+            />
+            <GraphBar
+              imageURL={expressImg}
+              name="express"
+              showTextHandler={showExpressTextHandler}
+            />
+            <GraphBar
+              imageURL={mongoDBImg}
+              name="mongoDB"
+              showTextHandler={showMongoTextHandler}
+            />
+            <GraphBar
+              imageURL={postgress}
+              name="postgress"
+              showTextHandler={showPostgresTextHandler}
+            />
+            
           </>
         )}
 
         {showAdobeSkills && (
           <>
-            <XD 
-              showXDTextHandler={showXDTextHandler}
+            <GraphBar
+              imageURL={xdImg}
+              name="xd"
+              showTextHandler={showXDTextHandler}
             />
-            <PHOTOSHOP 
-              showPhotoshopTextHandler={showPhotoshopTextHandler}
+            <GraphBar
+              imageURL={photoshopImg}
+              name="photoshop"
+              showTextHandler={showPhotoshopTextHandler}
             />
-            <ILLUSTRATOR 
-              showIllustratorTextHandler={showIllustratorTextHandler}
+            <GraphBar
+              imageURL={illustratorImg}
+              name="illustrator"
+              showTextHandler={showIllustratorTextHandler}
             />
+            
           </>
         )}
       </ul>
@@ -65,49 +127,3 @@ export default function GraphBody(props) {
     </div>
   )
 }
-
-
-{/* <li id="macbook">
-<div class="top">
-  <img src="images/macbook.png" alt="MacBook" />
-</div>
-<div class="bottom">
-  <div class="infobox">
-    <h3>MacBook</h3>
-    <p>102,6</p>
-  </div>
-</div>
-</li>
-<li id="ipod">
-<div class="top">
-  <img src="images/ipod.png" alt="iPod" />
-</div>
-<div class="bottom">
-  <div class="infobox">
-    <h3>iPod</h3>
-    <p>198,4</p>
-  </div>
-</div>
-</li>
-<li id="cinema">
-<div class="top">
-  <img src="images/cinema.png" alt="Cinema Display" />
-</div>
-<div class="bottom">
-  <div class="infobox">
-    <h3>Cinema&nbsp;Display</h3>
-    <p>38,2</p>
-  </div>
-</div>
-</li>
-<li id="macmini">
-<div class="top">
-  <img src="images/macmini.png" alt="Mac Mini" />
-</div>
-<div class="bottom">
-  <div class="infobox">
-    <h3>Mac&nbsp;Mini</h3>
-    <p>55,6</p>
-  </div>
-</div>
-</li> */}

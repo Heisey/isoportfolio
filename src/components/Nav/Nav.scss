@@ -120,17 +120,7 @@
       left: 239px;
     }
 
-    &--about {
-      background-color: #2867B2;
-    }
-
-    &--projects {
-      background-color: #6cc644;
-    }
-
-    &--home {
-      background-color: #b743cc;
-    }
+    
   }
 
   &__button:hover {
@@ -183,11 +173,11 @@
   }
 
   .Nav__button--left {
-    background-color: #d33303;
+    background-color: #ffa34d;
   }
 
   .Nav__button--right {
-    background-color: #bd2c00;
+    background-color: #e69346;
   }
 }
 
@@ -198,11 +188,11 @@
   }
 
   .Nav__button--left {
-    background-color: #d33303;
+    background-color: #ffa34d;
   }
 
   .Nav__button--right {
-    background-color: #bd2c00;
+    background-color: #e69346;
   }
 }
 
@@ -292,4 +282,72 @@
   .Nav__button--right {
     background-color: #be48d3;
   }
+}
+
+
+@media (max-width: 1650px) {
+  .Nav {
+    transform: scale(0.8);
+    top: 550px;
+    right: 620px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .Nav {
+    transform: scale(0.7);
+    top: 600px;
+    right: 520px;
+  }
+}
+
+@media (max-width: 1050px)
+  {
+    .Nav {
+      transform: scale(0.5);
+      top: 450px;
+      right: 380px;
+    }
+}
+
+@media (max-width: 800px)
+  {
+    .Nav {
+      transform: scale(0.5);
+      top: 650px;
+      right: 380px;
+    }
+}
+
+@media 
+  only screen and (max-width: 800px) and (max-height: 450px) {
+    .Nav {
+      transform: scale(0.4) rotateY(-150deg);
+      top: 270px;
+      right: 40px;
+
+      
+    }
+}
+
+@media 
+  only screen and (max-width: 700px) and (max-height: 450px) {
+    .Nav {
+      transform: scale(0.4) rotateY(-150deg);
+      top: 230px;
+      right: 0vw;
+
+      
+    }
+}
+
+@media 
+  only screen and (max-width: 450px) {
+    .Nav {
+      transform: scale(0.4) rotateY(-150deg);
+      top: 450px;
+      left: 75vw;
+
+      
+    }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 
+import AboutMobile from './components/AboutMobile/AboutMobile'
 import Future from './components/Future/Future'
 import Header from '../Header/Header'
 import History from './components/History/History'
@@ -11,9 +12,13 @@ export default function About(props) {
 
   return (
     <div className="About">
-      <Header
-        title="ABOUT"
-      />
+      
+      <div className="About__header">
+        <Header
+          title="ABOUT"
+        />
+      </div>
+      
       <div className="About__history">
         <History />
       </div>
@@ -24,6 +29,10 @@ export default function About(props) {
 
       <div className="About__future">
         <Future />
+      </div>
+
+      <div className="About__mobile">
+        <AboutMobile />
       </div>
     </div>
   )
