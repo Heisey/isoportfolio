@@ -208,7 +208,10 @@
 }
 
 @media 
-  only screen and (max-width: 700px) and (max-height: 450px) {
+  only screen and (max-width: 700px) 
+  and (max-height: 450px) 
+  and (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) {
     .JumboTron {
 
       &__text {
@@ -236,6 +239,35 @@
     }
 }
 
+// @media 
+//   only screen and (max-width: 450px) {
+//   .JumboTron {
+
+//     &__text {
+//       &--first {
+//         position: absolute;
+//         top: 19vh;
+//         left: -33vw;
+//         transform: scale(0.35);
+//       }
+  
+//       &--last {
+//         position: absolute;
+//         top: 28vh;
+//         left: -22vw;
+//         transform: scale(0.35);
+//       }
+  
+//       &--nick {
+//         position: absolute;
+//         top: 36vh;
+//         left: -5vw;
+//         transform: scale(0.35);
+//       }
+//     }
+//   }
+// }
+
 @media 
   only screen and (max-width: 450px) {
   .JumboTron {
@@ -243,51 +275,22 @@
     &__text {
       &--first {
         position: absolute;
-        top: 19vh;
-        left: -33vw;
-        transform: scale(0.35);
-      }
-  
-      &--last {
-        position: absolute;
-        top: 28vh;
-        left: -22vw;
-        transform: scale(0.35);
-      }
-  
-      &--nick {
-        position: absolute;
-        top: 36vh;
-        left: -5vw;
-        transform: scale(0.35);
-      }
-    }
-  }
-}
-
-@media 
-  only screen and (max-width: 450px) {
-  .JumboTron {
-
-    &__text {
-      &--first {
-        position: absolute;
-        top: 19vh;
-        left: -38vw;
+        top: 16vh;
+        left: -30vw;
         transform: scale(0.30);
       }
   
       &--last {
         position: absolute;
-        top: 28vh;
-        left: -27vw;
+        top: 23vh;
+        left: -19vw;
         transform: scale(0.30);
       }
   
       &--nick {
         position: absolute;
-        top: 36vh;
-        left: -12vw;
+        top: 28vh;
+        left: -6vw;
         transform: scale(0.30);
       }
     }

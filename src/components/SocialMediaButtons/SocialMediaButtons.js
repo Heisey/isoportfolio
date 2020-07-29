@@ -44,7 +44,7 @@ export default function SocialMediaButton(props) {
           onMouseEnter={handleEnterGitHubHover}
           onMouseLeave={handleLeaveGitHubHover}
         >
-          <a href="#" 
+          <a href="https://github.com/Heisey" 
              className="SocialMediaButtons__item--link"
              id="github"
           >
@@ -56,7 +56,7 @@ export default function SocialMediaButton(props) {
           key="linkedin" 
           className="SocialMediaButtons__item"
         >
-          <a href="#" 
+          <a href="https://www.linkedin.com/in/justin-heisler-35069a87/" 
              className="SocialMediaButtons__item--link"
              id="linkedin"
              onMouseEnter={handleEnterLinkedinHover}
@@ -66,7 +66,7 @@ export default function SocialMediaButton(props) {
           </a>
         </li>
         <li key="email" className="SocialMediaButtons__item">
-          <a href="#" 
+          <a href="mailto:thegreatheisey01@gmail.com" 
              className="SocialMediaButtons__item--link"
              id="email"
              onMouseEnter={handleEnterEmailHover}
